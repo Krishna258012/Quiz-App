@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Quiz app</title>
+</head>
+<body>
+    <div id="container">
+        <div id="mai">
+            <!-- MAIN logo and some instrunsions -->
+
+            <div id="main">
+            <div><img src="./images/testbook.png" alt="something error " class="testbooklogo"></div>
+            <div class="hello">Hello user!</div>
+            <div class="enter_name">Enter your name to countinue the Quiz.</div>
+            </div>
+
+
+
+
+            <!-- Name and enter button -->
+
+            <form action="quiz_page.html" method="get">
+            <div class="name_button">
+                <input id="name" name="name" type="text" placeholder="ENTER YOUR NAME..." required>
+                <input id="enter" type="submit" onclick="alertRequire()" value="ENTER">
+            </div>
+            <div class="warning">
+                <div class="seconds">You'll have 10 seconds to answer each questions</div><hr>
+            </div>
+            <div class="catg">
+                <div class="select_catg">Select Category</div>
+            </div>
+
+       
+
+            <!--Select Categories -->
+
+            <div class="categories">
+                <div><input type="radio" name="category" id="pipes" value="pipes" required>
+                    <label for="pipes">Pipes And Cisterns</label></div>
+
+                <div><input type="radio" name="category" id="probability" value="probability" required>
+                    <label for="probability">Probility</label></div>
+
+                <div><input type="radio" name="category" id="problems" value="problems" required>
+                    <label for="problems">Problems On Ages</label></div>
+
+                <div><input type="radio" name="category" id="profit" value="profit" required>
+                    <label for="profit">Profit And Loss</label></div>
+            </div>
+        </form>
+        </div>
+    </div>
+    <script src="./src/script.js"></script>
+</body>
+</html>

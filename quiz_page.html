@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/quiz_page.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Quiz PAGE</title>
+</head>
+<body>
+    <div id="container">
+        <div id="mai">
+            <!-- Category name -->
+            <div id="category_name"></div>
+
+
+            <!-- Total Time And SCORE -->
+            <div class="time">
+                <div id="total_time"></div>
+                <div id="score">SCORE: <span id="total_score" ></span></div>
+            </div>
+
+
+            <!-- Ouestion Box -->
+            <div class="questions">
+            <div class="question_bo"><span id="question_box"></span>
+                <div id="circle"></div>
+            </div>
+            </div>
+            <!-- Select Answers -->
+            <!-- <form action="result.html" method="get"> -->
+            <div class="all_answers">
+                <div><input type="radio"class="answer" name="answer" id="first" value="first" required>
+                    <label for="first" id="firs"></label></div>
+
+                <div><input type="radio"class="answer" name="answer" id="second" value="second" required>
+                    <label for="second" id="secon"></label></div>
+
+                <div><input type="radio"class="answer" name="answer" id="third" value="third" required>
+                    <label for="third" id="thir"></label></div>
+
+                <div><input type="radio"class="answer" name="answer" id="fourth" value="fourth" required>
+                    <label for="fourth" id="fourt"></label></div>
+            </div>
+            <div class="nxt">
+                <input id="next_question" type="submit" value="Next Question">
+            </div>
+        <!-- </form> -->
+        </div>
+    </div>
+    <script src="./src/quiz_page.js"></script>
+</body>
+</html>

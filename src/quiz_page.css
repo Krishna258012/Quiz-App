@@ -1,0 +1,114 @@
+#category_name{
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 545;
+    font-size: 18px;
+    color: #565758;
+}
+
+.time{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+#total_time{
+    color: #0690db;
+    font-weight: 700;
+    font-size: 25px;
+    outline: 1px solid #0690db;
+    border-radius: 50%;
+}
+
+#total_score{
+    font-weight: 800;
+}
+#score{
+    color: #565758;
+}
+#score , #total_score{
+    font-size: 20px;
+}
+.questions{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 35px;
+}
+
+.question_bo{
+    position: relative;
+    border: 2px solid #b2b0b0;
+    border-radius: 5px;
+    width: 90%;
+    height: 200px;
+    text-align: justify;
+    padding: 30px 30px 0 30px;
+    font-weight: 500;
+    color: #262829;
+}
+#circle{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border: 2px solid #0690db;
+    border-radius: 50%;
+    top: -15%;
+    right: 50%;
+    font-weight: 700;
+    color: #0690db;
+    background-color: #fff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all_answers{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    justify-content: space-evenly;
+}
+.all_answers > div{
+    width: 350px;
+    height: 60px;
+    padding-top: 15px;
+}
+
+.all_answers > div > label{
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #565758;
+    border: 2px solid #35a8e7;
+    background-color: #e0f2fb;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.nxt{
+    display: flex;
+    justify-content: center;
+}
+
+#next_question{
+    background-color: #35a8e7;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 25px;
+    width: 30%;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 769px){
+    .all_answers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
